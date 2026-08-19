@@ -14,7 +14,7 @@ jobs:
       - name: Clone repos
         run: |
           git clone --recurse-submodules --depth=1 https://github.com/${{ github.repository }}
-          git clone --recurse-submodules --depth=1 https://github.com/xzn/BootNTR.git
+          git clone --recurse-submodules --depth=1 https://github.com/git-effl/BootNTR.git
           ln -s BootNTR BootNTR-Bins
       - name: Compile NTR-HR
         run: |
